@@ -58,7 +58,7 @@ When studying for entry-level cloud credentials like the AZ-900, many students d
 
 ```mermaid
 graph TD
-    subgraph UI_Layer [User Interface Layer (React 19 + Tailwind CSS)]
+   subgraph UI_Layer ["User Interface Layer (React 19 + Tailwind CSS)"]
         Nav[Navbar & Global Stats Pill]
         Dash[Learning Dashboard & Recommendations]
         TopicView[Practise by Topic Browser]
