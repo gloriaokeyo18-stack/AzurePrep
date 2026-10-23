@@ -81,16 +81,15 @@ graph TD
         QContext[QuizContext Provider]
         LogicUtils["Pure Logic Utilities (quizLogic.ts)"]
         EvalEngine[evaluateAnswer]
-        StatCalc[calculateTopicStats & calculateOverallStats]
+        StatCalc["calculateTopicStats & calculateOverallStats"]
         Sampler[sampleMockExamQuestions]
     end
 
-    subgraph Data_Storage [Persistent Storage & Content Bank]
-        QBank[(Verified AZ-900 Question Bank (36 Qs))]
-        DomainsCfg[(Official Exam Domains Config)]
+   subgraph Data_Storage [Persistent Storage & Content Bank]
+        QBank[("Verified AZ-900 Question Bank (36 Qs)")]
+        DomainsCfg[("Official Exam Domains Config")]
         LocalStorage[(Browser LocalStorage Engine)]
     end
-
     Nav --> QContext
     Dash --> QContext
     TopicView --> QContext
