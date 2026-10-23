@@ -77,9 +77,9 @@ graph TD
         QSummary[QuizSummary & Domain Breakdown Card]
     end
 
-    subgraph State_Management [Context & Pure Logic]
+   subgraph State_Management [Context & Pure Logic]
         QContext[QuizContext Provider]
-        LogicUtils[Pure Logic Utilities (quizLogic.ts)]
+        LogicUtils["Pure Logic Utilities (quizLogic.ts)"]
         EvalEngine[evaluateAnswer]
         StatCalc[calculateTopicStats & calculateOverallStats]
         Sampler[sampleMockExamQuestions]
